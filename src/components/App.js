@@ -1,6 +1,6 @@
 import React, {Component, useState} from "react";
 import '../styles/App.css';
-
+import Slides from "../data.js"
 const App = () => {
   const [increment, setIncrement] = useState(0);
   const [isDisabled1, setDisabled1] = useState(false);
@@ -36,17 +36,17 @@ const App = () => {
         onClick={prevHandler}
         disabled={isDisabled1}
       >
-        prev
+       Prev 
       </button>
       <button data-testid="button-restart" onClick={resetHandler}>
-        restart
+        Restart
       </button>
       <button
         data-testid="button-next"
         onClick={nextHandler}
         disabled={isDisabled2}
       >
-        next
+        Next
       </button>
     </>
   );
